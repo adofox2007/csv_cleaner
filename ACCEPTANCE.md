@@ -14,14 +14,18 @@
 ## 实际执行记录
 
 ```text
-python --version
-Python 3.14.0
+本地 IDE：PyCharm 2025.2.4
+本地解释器：Python 3.10.4
 
 git --version
 git version 2.53.0.windows.2
 
-python -m unittest discover -s tests -v
-Ran 21 tests in 1.925s
+PyCharm 本地测试：
+Ran 21 tests in 2.688s
+OK
+
+最终提交前完整复核（详见 test_results.log）：
+Ran 21 tests in 1.864s
 OK
 ```
 
@@ -41,12 +45,12 @@ accepted=7; rejected=8
 
 ## 文件检查
 
-- 新增：`clean.py`、`README.md`、`ACCEPTANCE.md`、`DEFENSE.md`、`.gitignore`、`test_results.log`。
-- 新增测试：`tests/test_clean.py`。
-- 新增输入：四个 `examples/*.csv`，其中 BOM 与 GB18030 均为真实编码。
-- 新增真实运行输出：`examples/expected/` 下四个 CSV。
-- 删除：无。
-- 工作区其他既有项目：未修改。
+- 公开仓库：`https://github.com/adofox2007/csv_cleaner`。
+- 主分支：`main`；首次提交 `6cf2661` 已推送到 `origin/main`。
+- 核心程序：`clean.py`；端到端测试：`tests/test_clean.py`。
+- 输入样例：四个 `examples/*.csv`，其中 BOM 与 GB18030 均为真实编码。
+- 真实运行输出：`examples/expected/` 下四个 CSV；商品价格上限统一使用 1000。
+- 本轮一致性校对尚未提交或推送，等待最终人工检查。
 
 ## 尚存问题
 

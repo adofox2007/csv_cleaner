@@ -4,13 +4,13 @@
 
 ## 运行环境
 
-- 已验证：Windows，Python 3.14.0
+- 本地验证：Windows，Python 3.10.4，PyCharm 2025.2.4
 - 最低建议版本：Python 3.10（代码使用 `X | None` 类型语法）
 - Git 工具：2.53.0.windows.2
 - 第三方依赖：无
 - 实验日期：2026-11-02（Asia/Shanghai）
 
-当前交付目录不是 Git 仓库，`git rev-parse --show-toplevel` 的真实结果是 `fatal: not a git repository`，因此没有可声明的 commit。若需纳入版本控制，可由使用者执行 `git init` 后自行提交；本项目没有伪造 commit，也没有推送远程仓库。
+项目已纳入 Git 版本控制，公开仓库为 [adofox2007/csv_cleaner](https://github.com/adofox2007/csv_cleaner)，主分支为 `main`。首次提交 `6cf2661`（`Complete CSV data cleaning project`）已推送至 `origin/main`；本轮最终一致性校对的修改尚未推送，需检查后再提交。
 
 ## 目录结构
 
@@ -75,7 +75,7 @@ python clean.py \
   --required sku,product,price,quantity \
   --unique sku \
   --integer quantity \
-  --range price:0:100000 \
+  --range price:0:1000 \
   --range quantity:0:10000
 ```
 
@@ -177,7 +177,7 @@ python clean.py --input examples/input_gb.csv --output gb_output.csv --encoding 
 python -m unittest discover -s tests -v
 ```
 
-本次真实结果：`Ran 21 tests ... OK`，退出码 0。完整输出保存在 `test_results.log`。测试使用项目内自动清理的临时目录隔离数据，并通过 `subprocess` 实际运行 `clean.py`。
+Python 3.10.4 / PyCharm 2025.2.4 本地验证结果为 `Ran 21 tests in 2.688s`、`OK`。最终提交前又执行了一次完整复核，实际结果为 `Ran 21 tests in 1.864s`、`OK`，退出码 0；这次复核的完整输出保存在 `test_results.log`。测试使用项目内自动清理的临时目录隔离数据，并通过 `subprocess` 实际运行 `clean.py`。
 
 覆盖范围包括：综合清洗、UTF-8/BOM/GB18030/手动编码、全合法数据、非法记录不占唯一键、规则字段不存在、错误规则、输入缺失、列数错误、坏引号、不可解码、输出目录缺失、替换失败、路径冲突、空文件和只有表头、六列商品、姓名边界、已有输出保护、特殊字符、重复运行一致性、非有限数字和联合唯一键。5 种退出码均有断言。
 
@@ -220,3 +220,11 @@ python -m unittest discover -s tests -v
 ```
 
 然后运行前述人员和商品样例命令。预期分别得到 `14/11` 与 `7/8` 的有效/拒绝计数。详细验收证据见 [ACCEPTANCE.md](ACCEPTANCE.md)，现场讲解提纲见 [DEFENSE.md](DEFENSE.md)。
+
+仓库复现方式：
+
+```bash
+git clone https://github.com/adofox2007/csv_cleaner.git
+cd csv_cleaner
+python -m unittest discover -s tests -v
+```

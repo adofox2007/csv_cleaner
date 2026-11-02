@@ -21,6 +21,6 @@ test_20_special_characters_and_repeatability (test_clean.CleanerCLITests.test_20
 test_21_non_finite_numbers_and_combined_unique_key (test_clean.CleanerCLITests.test_21_non_finite_numbers_and_combined_unique_key) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 1.925s
+Ran 21 tests in 1.864s
 
 OK

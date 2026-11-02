@@ -3,7 +3,7 @@ A003,,88.00,5,促销,active,product: required value is missing
 A004,显示器,,8,显示设备,active,price: required value is missing; price: numeric value is missing
 A005,扩展坞,not-a-price,4,配件,pending,price: not numeric
 A006,数据线,19.90,two,配件,active,quantity: not an integer; quantity: not numeric
-A007,服务器,9999999,1,企业设备,quote only,price: above maximum 100000
+A007,服务器,9999999,1,企业设备,quote only,price: above maximum 1000
 A008,贴纸,2.50,-3,周边,active,quantity: below minimum 0
 A010,重复摄像头,289.00,7,视频,legacy,duplicate key: sku
 A013,非法替代,bad,9,配件,active,price: not numeric
