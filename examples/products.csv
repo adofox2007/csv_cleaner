@@ -1,0 +1,16 @@
+sku,product,price,quantity,category,status
+A001,机械键盘,399.00,10,外设,active
+A002,无线鼠标,129.50,25,外设,active
+A003,,88.00,5,促销,active
+A004,显示器,,8,显示设备,active
+A005,扩展坞,not-a-price,4,配件,pending
+A006,数据线,19.90,two,配件,active
+A007,服务器,9999999,1,企业设备,quote only
+A008,贴纸,2.50,-3,周边,active
+A009,"收纳盒, 大号",49.00,12,办公,"new, featured"
+A010,摄像头,299.00,6,视频,active
+A010,重复摄像头,289.00,7,视频,legacy
+A011,耳机,699.00,3,音频,active
+A012,麦克风,899.00,2,音频,back order
+A013,合法替代,59.00,9,配件,active
+A013,非法替代,bad,9,配件,active

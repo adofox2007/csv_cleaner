@@ -1,0 +1,12 @@
+id,name,age,error_reason
+1,错误1,abc,age: not an integer; age: not numeric; name: invalid demonstration name format
+3,,25,name: required value is missing
+4,王芳,,age: required value is missing; age: integer value is missing; age: numeric value is missing
+5,赵强,-1,age: below minimum 0
+6,陈晨,151,age: above maximum 150
+8,Alice2,30,name: invalid demonstration name format
+9,阿里··木,22,name: invalid demonstration name format
+10,   ,18,name: required value is missing
+11,周敏,36,duplicate key: id
+16,孙七,abc,age: not an integer; age: not numeric
+23,正常, ,age: required value is missing; age: integer value is missing; age: numeric value is missing

@@ -1,0 +1,7 @@
+﻿.idea/
+__pycache__/
+*.py[cod]
+/local_output/
+/people_output.csv
+/products_output.csv
+/rejected.csv

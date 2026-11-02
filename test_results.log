@@ -1,0 +1,26 @@
+test_01_comprehensive_cleaning (test_clean.CleanerCLITests.test_01_comprehensive_cleaning) ... ok
+test_02_utf8_bom_encoding (test_clean.CleanerCLITests.test_02_utf8_bom_encoding) ... ok
+test_03_gb18030_encoding (test_clean.CleanerCLITests.test_03_gb18030_encoding) ... ok
+test_04_manual_encoding (test_clean.CleanerCLITests.test_04_manual_encoding) ... ok
+test_05_all_valid_and_whitespace_is_trimmed (test_clean.CleanerCLITests.test_05_all_valid_and_whitespace_is_trimmed) ... ok
+test_06_invalid_row_does_not_reserve_unique_key (test_clean.CleanerCLITests.test_06_invalid_row_does_not_reserve_unique_key) ... ok
+test_07_missing_configured_field_is_exit_2 (test_clean.CleanerCLITests.test_07_missing_configured_field_is_exit_2) ... ok
+test_08_bad_rule_and_unknown_encoding_are_exit_2 (test_clean.CleanerCLITests.test_08_bad_rule_and_unknown_encoding_are_exit_2) ... ok
+test_09_missing_input_is_exit_3 (test_clean.CleanerCLITests.test_09_missing_input_is_exit_3) ... ok
+test_10_inconsistent_column_count_is_exit_3 (test_clean.CleanerCLITests.test_10_inconsistent_column_count_is_exit_3) ... ok
+test_11_malformed_quotes_are_exit_3 (test_clean.CleanerCLITests.test_11_malformed_quotes_are_exit_3) ... ok
+test_12_undecodable_input_is_exit_3 (test_clean.CleanerCLITests.test_12_undecodable_input_is_exit_3) ... ok
+test_13_missing_output_directory_is_exit_4 (test_clean.CleanerCLITests.test_13_missing_output_directory_is_exit_4) ... ok
+test_14_replace_failure_is_exit_4 (test_clean.CleanerCLITests.test_14_replace_failure_is_exit_4) ... ok
+test_15_input_output_conflict_is_exit_2 (test_clean.CleanerCLITests.test_15_input_output_conflict_is_exit_2) ... ok
+test_16_empty_and_header_only_inputs (test_clean.CleanerCLITests.test_16_empty_and_header_only_inputs) ... ok
+test_17_six_column_product_data (test_clean.CleanerCLITests.test_17_six_column_product_data) ... ok
+test_18_name_rule_boundaries (test_clean.CleanerCLITests.test_18_name_rule_boundaries) ... ok
+test_19_existing_outputs_protected_on_bad_input (test_clean.CleanerCLITests.test_19_existing_outputs_protected_on_bad_input) ... ok
+test_20_special_characters_and_repeatability (test_clean.CleanerCLITests.test_20_special_characters_and_repeatability) ... ok
+test_21_non_finite_numbers_and_combined_unique_key (test_clean.CleanerCLITests.test_21_non_finite_numbers_and_combined_unique_key) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.925s
+
+OK
